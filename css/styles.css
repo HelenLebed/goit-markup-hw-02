@@ -3,13 +3,21 @@
     --secondary-font-color: #ffffff;
     --main-logo-color: #2196f3;
     --alternative-font-color: #757575;
+    --order-background-color: #2f303a;
+    --page-header-logo-color: #000000;
+    --portfolio-select-list-background-color: #f5f4fa;
+    --modal-open-btn-background-color: #188ce8;
+    --bottom-address-tel-mail-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
-    /* общий шрифт */
-    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
     color: var(--primary-font-color);
+    background-color: var(--secondary-font-color);
 }
+
 .link {
     /* убрать подчеркивание */
     text-decoration: none;
@@ -46,7 +54,7 @@ button {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--page-header-logo-color);
 }
 .logo {
     color: var(--main-logo-color);
@@ -66,7 +74,7 @@ button {
     color: var(--alternative-font-color);
 }
 .order {
-    background: #2f303a;
+    background: var(--order-background-color);
 }
 .order-text {
     font-weight: 900;
@@ -91,9 +99,8 @@ button {
 
 .modal-open-btn:hover,
 .modal-open-btn:focus {
-    background: #188ce8;
+    background: var(--modal-open-btn-background-color);
 }
-
 .menu-link:hover,
 .menu-link:focus,
 .menu-contact:hover,
@@ -117,13 +124,13 @@ button {
 .propositions-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-font-color);
 }
 .our-team {
-    background: #f5f4fa;
+    background: var(--portfolio-select-list-background-color);
 }
 .our-team-title {
     font-weight: 700;
@@ -146,7 +153,6 @@ button {
 }
 
 .our-team-job {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -155,7 +161,7 @@ button {
 }
 
 .bottom {
-    background: #2f303a;
+    background: var(--order-background-color);
 }
 .page-footer-logo {
     font-family: "Raleway";
@@ -167,7 +173,6 @@ button {
 }
 .bottom-address {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -175,11 +180,11 @@ button {
 }
 .bottom-address-tel-mail {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
+
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--bottom-address-tel-mail-color);
 }
 .bottom-address:hover,
 .bottom-address:focus,
@@ -188,7 +193,7 @@ button {
     color: var(--main-logo-color);
 }
 .portfolio-select-list button {
-    background: #f5f4fa;
+    background: var(--portfolio-select-list-background-color);
     border-radius: 4px;
     font-family: inherit;
     font-style: inherit;
